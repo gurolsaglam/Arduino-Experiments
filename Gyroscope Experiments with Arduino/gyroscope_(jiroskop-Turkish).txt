@@ -1,0 +1,41 @@
+MPU6050 I2C register haritasý
+https://www.olimex.com/Products/Modules/Sensors/MOD-MPU6050/resources/RM-MPU-60xxA_rev_4.pdf
+
+
+BMP085 barometre datasheet
+https://www.sparkfun.com/datasheets/Components/General/BST-BMP085-DS000-05.pdf
+
+
+(Elimizdeki GY-88 için)
+"I2C Scanner
+Scanning...
+I2C device found at address 0x1E  !
+I2C device found at address 0x68  !
+I2C device found at address 0x77  !
+done"
+
+---- ÖNEMLÝ: Eðer I2C adresi 0x68 olan baþka bir sensör daha kullanýlmak isteniyorsa,
+-- AD0 pinini 3V3'e baðlamakla bu sensördeki adresi 0x69'a dönüþtürebilirsiniz.
+-- Ancak önceden I2C Scanner ile kontrol etmeyi unutmayýn.
+-- Eðer cihazýnýz default olarak 0x69 adresine sahipse, AD0 pinini GND'ye baðlayýn,
+-- bu adresi 0x68'e çevirecektir. Tekrar ediyorum, I2C Scanner ile kontrol edin.
+
+Arduino bütün kod:
+http://bbs.wandianlian.com/forum.php?mod=viewthread&tid=94
+
+
+Raspberry pi bütün kod (denenmedi):
+http://hamsterworks.co.nz/mediawiki/index.php?title=ten_degrees_of_freedom_i2c_sensor&oldid=4023
+
+
+Kütüphaneye buradan ulaþýlabilir:
+http://www.i2cdevlib.com/usage
+
+
+MPU6050 satýrýndaki ilk üçü ivme, diðer üçü jiroskop.
+Ývme için 1g=9.80665=16384 oluyor seri ekranda.
+Jiroskop ölçümler 250 derece/saniye olmasý lazým.
+HMC5883L magnetometre oluyor, çýkan verileri deneyemedim.
+
+Barometre yükseklik formülü
+https://en.wikipedia.org/wiki/Barometric_formula

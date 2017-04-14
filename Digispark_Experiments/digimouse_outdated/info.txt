@@ -1,0 +1,9 @@
+This program is kind of a joke.
+After Digispark has this program on it and is connected to a computer,
+ it will keep moving the cursor to the south-most west-most corner,
+ and then proceed to open the start menu, and turn off the computer,
+ given that it has a windows 10 running on it.
+
+But currently this is not working anymore, because after this program was written,
+ a huge update came from microsoft and they changed the turn off
+ button's place in the start menu. But it can still work with some minor changes.

@@ -1,0 +1,9 @@
+Pretty straightforward, simple read-report module, reads the value and reports it.
+
+Connect the lower voltage side to the GND and the higher voltage side to the VCC.
+
+Connect S pin to the analog input pin,
+- pin to GND in Arduino,
++ pin does nothing, just leave it floating (not connected).
+
+http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-25v-voltage-sensor-module-user-manual/

@@ -1,0 +1,39 @@
+MPU6050 I2C register map
+https://www.olimex.com/Products/Modules/Sensors/MOD-MPU6050/resources/RM-MPU-60xxA_rev_4.pdf
+
+BMP085 barometer datasheet
+https://www.sparkfun.com/datasheets/Components/General/BST-BMP085-DS000-05.pdf
+
+(for the GY-88 that we currently have)
+"I2C Scanner
+Scanning...
+I2C device found at address 0x1E  !
+I2C device found at address 0x68  !
+I2C device found at address 0x77  !
+done"
+
+---- IMPORTANT: If intented to use another sensor with I2C address 0x68,
+-- then connect the AD0 pin to high (3V3), this will change the address to 0x69.
+-- But do not forget to verify that with I2C Scanner beforehand.
+-- If the device you have has 0x69 by default, connect the AD0 pin to low (GND),
+-- this will change it to 0x68. Again, do not forget to verify with I2C Scanner.
+
+Arduino whole code
+http://bbs.wandianlian.com/forum.php?mod=viewthread&tid=94
+
+
+Raspberry pi whole code (haven't tried)
+http://hamsterworks.co.nz/mediawiki/index.php?title=ten_degrees_of_freedom_i2c_sensor&oldid=4023
+
+
+The library can be found here:
+http://www.i2cdevlib.com/usage
+
+
+In the MPU6050 line, the first three are acceleration, the other three are gyro.
+For acceleration 1g = 9.80665 = 16384 in the serial port.
+Gyro measurements should be 250 deg/sec.
+HMC5883L is the magnetometer, I have not been able to try out the output data.
+
+Barometer height formula
+https://en.wikipedia.org/wiki/Barometric_formula

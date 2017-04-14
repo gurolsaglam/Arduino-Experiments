@@ -1,0 +1,8 @@
+"5a range of single-phase ac current sensor module for arduino"
+
+To be able to use AC sensor we need the wire through which the
+ alternate current is going to go through the hole in the sensor,
+ as seen in the PNG file inside this folder.
+
+Which is why the sensor is not useful for the mapper robot.
+(for mapper robot, see: https://github.com/ResearcherOne/RobotTakimiRepo)

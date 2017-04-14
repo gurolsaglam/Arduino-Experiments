@@ -1,0 +1,4 @@
+Bunu modülün hangi I2C device nerelerde olduðunu öðrenmek için kullan.
+
+
+Use this Arduino program to find out which I2C addresses are used in your sensors.
