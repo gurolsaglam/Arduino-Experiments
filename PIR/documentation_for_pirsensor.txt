@@ -1,0 +1,4 @@
+http://playground.arduino.cc/Code/PIRsense
+
+sensitivity is adjustable:
+https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/testing-a-pir
